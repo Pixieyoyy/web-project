@@ -4,78 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechShop - Магазин гаджетів</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <header>
-        <h1>TechShop</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Головна</a></li>
-                <li><a href="#">Товари</a></li>
-                <li><a href="#">Про нас</a></li>
-                <li><a href="#">Контакти</a></li>
-                <li><a href="#">Кошик</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">TechShop</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Товари</a></li>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Кошик</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-       <section class="hero">
-    <h2>Новинки 2025</h2>
-    <p>Найкращі гаджети сезону вже у продажу!</p>
-    <a href="#" class="btn">Купити зараз</a> 
+    <main class="main-content">
+        <section class="hero">
+            <h2>Новинки 2026</h2>
+            <p>Найкращі гаджети сезону вже у продажу!</p>
+            <a href="#" class="btn">Купити зараз</a> 
         </section>
 
-        <section>
-            <h2>Популярні товари</h2>
+        <section class="products-section">
+            <h2 class="section-title">Популярні товари</h2>
             
-            <article>
-                <img src="https://via.placeholder.com/150" alt="Смартфон X-Pro">
-                <h3>Смартфон X-Pro</h3>
-                <p>Потужний процесор та неймовірна камера.</p>
-                <p><strong>Ціна: 25 000 грн</strong></p>
-                <button type="button" class="btn">Купити</button>
-            </article>
+            <div class="products-grid">
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Смартфон X-Pro">
+                    <h3>Смартфон X-Pro</h3>
+                    <p class="product-desc">Потужний процесор та неймовірна камера для найкращих знімків.</p>
+                    <p class="product-price"><strong>25 000 грн</strong></p>
+                    <button type="button" class="btn">Купити</button>
+                </article>
 
-            <article>
-                <img src="https://via.placeholder.com/150" alt="Навушники SoundWave">
-                <h3>Навушники SoundWave</h3>
-                <p>Кристально чистий звук та шумопоглинання.</p>
-                <p><strong>Ціна: 5 000 грн</strong></p>
-                <button type="button" class="btn">Купити</button>
-            </article>
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Навушники SoundWave">
+                    <h3>Навушники SoundWave</h3>
+                    <p class="product-desc">Кристально чистий звук та активне шумопоглинання.</p>
+                    <p class="product-price"><strong>5 000 грн</strong></p>
+                    <button type="button" class="btn">Купити</button>
+                </article>
 
-            <article>
-                <img src="https://via.placeholder.com/150" alt="SmartWatch Series 5">
-                <h3>SmartWatch Series 5</h3>
-                <p>Ваш надійний помічник для здоров'я.</p>
-                <p><strong>Ціна: 12 000 грн</strong></p>
-                <button type="button" class="btn">Купити</button>
-            </article>
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="SmartWatch Series 5">
+                    <h3>SmartWatch Series 5</h3>
+                    <p class="product-desc">Ваш надійний помічник для відстеження здоров'я та активності.</p>
+                    <p class="product-price"><strong>12 000 грн</strong></p>
+                    <button type="button" class="btn">Купити</button>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <section>
-            <h3>Контакти</h3>
-            <p>Email: support@techshop.ua</p>
-        </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <section class="footer-info">
+                <h3>Контакти</h3>
+                <p>Email: support@techshop.ua</p>
+            </section>
 
-        <section>
-            <h3>Підписка</h3>
-            <form>
-                <input type="email" placeholder="Ваш Email" required>
-                <button type="submit" class="btn">ОК</button>
-            </form>
-        </section>
-
-        <p>&copy; 2025 TechShop. Всі права захищені.</p>
+            <section class="footer-subscribe">
+                <h3>Підписка</h3>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш Email" required>
+                    <button type="submit" class="btn">ОК</button>
+                </form>
+            </section>
+        </div>
+        <p class="copyright">&copy; 2026 TechShop. Всі права захищені.</p>
     </footer>
 
 </body>
