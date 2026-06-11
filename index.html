@@ -13,39 +13,51 @@
 
     <header class="header">
         <div class="header-container">
-            <a href="#" class="logo">TechShop</a>
-            <nav class="nav">
-                <li><a href="checkout.html">Кошик (Оформити)</a></li>
+            <a href="index.html" class="logo">TechShop</a>
+            
+            <button class="menu-toggle" aria-label="Відкрити меню">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+
+            <nav class="nav main-nav">
+                <ul class="nav-list">
                     <li><a href="#">Головна</a></li>
                     <li><a href="#">Товари</a></li>
                     <li><a href="#">Про нас</a></li>
                     <li><a href="#">Контакти</a></li>
-                    <li><a href="#">Кошик</a></li>
+                    <li>
+                        <a href="checkout.html" class="btn btn-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            Кошик
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="page-layout">
-        
         <aside class="sidebar">
             <h3>Фільтри</h3>
-            <ul class="filter-list">
+            <ul>
                 <li><label><input type="checkbox"> Ноутбуки</label></li>
                 <li><label><input type="checkbox"> Смартфони</label></li>
                 <li><label><input type="checkbox"> Навушники</label></li>
-                <li><label><input type="checkbox"> Годинники</label></li>
+                <li><label><input type="checkbox"> Розумні годинники</label></li>
             </ul>
         </aside>
 
         <section class="products-content">
-            <h2 class="section-title">Популярні товари</h2>
-            
+            <h2>Популярні товари</h2>
             <div class="products-grid">
                 <article class="product-card">
                     <img src="https://via.placeholder.com/150" alt="Смартфон X-Pro">
                     <h3>Смартфон X-Pro</h3>
-                    <p class="product-desc">Потужний процесор та неймовірна камера для найкращих знімків.</p>
+                    <p class="product-desc">Потужний процесор та неймовірна камера.</p>
                     <p class="product-price"><strong>25 000 грн</strong></p>
                     <button type="button" class="btn">Купити</button>
                 </article>
@@ -53,7 +65,7 @@
                 <article class="product-card">
                     <img src="https://via.placeholder.com/150" alt="Навушники SoundWave">
                     <h3>Навушники SoundWave</h3>
-                    <p class="product-desc">Кристально чистий звук та активне шумопоглинання.</p>
+                    <p class="product-desc">Кристально чистий звук та шумопоглинання.</p>
                     <p class="product-price"><strong>5 000 грн</strong></p>
                     <button type="button" class="btn">Купити</button>
                 </article>
@@ -61,13 +73,12 @@
                 <article class="product-card">
                     <img src="https://via.placeholder.com/150" alt="SmartWatch Series 5">
                     <h3>SmartWatch Series 5</h3>
-                    <p class="product-desc">Ваш надійний помічник для відстеження здоров'я та активності.</p>
+                    <p class="product-desc">Ваш надійний помічник для здоров'я.</p>
                     <p class="product-price"><strong>12 000 грн</strong></p>
                     <button type="button" class="btn">Купити</button>
                 </article>
             </div>
         </section>
-
     </main>
 
     <footer class="footer">
@@ -75,6 +86,23 @@
             <section class="footer-info">
                 <h3>Контакти</h3>
                 <p>Email: support@techshop.ua</p>
+                <ul class="social-links">
+                    <li>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Telegram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </section>
 
             <section class="footer-subscribe">
